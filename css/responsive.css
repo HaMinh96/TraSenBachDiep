@@ -1,0 +1,189 @@
+.navbar-toggler i {
+    color: var(--primaryGreen);
+}
+
+@media (max-width: 991.98px) { 
+    .nav-item {
+        padding: 1rem 0;
+    }
+    .leaf {
+        display: none;
+    }
+    .tea-pot {
+        display: none;
+    }
+    .item-about p {
+        width: unset;
+        top: 22%;
+    }
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+    .carousel-caption h2 {
+        font-size: 3rem;
+    }
+    .carousel-caption p {
+        display: none;
+    }
+    .item-name {
+        font-size: 1rem;
+    }
+    .rating {
+        font-size: .5rem;
+    }
+    .item-btm p, .item-btm span {
+        font-size: .75rem;
+    }
+    .sort-btn {
+        background-color: #E8F2C3;
+        padding: .5rem;
+        cursor: pointer;
+        display: block;
+        border-radius: 6px;
+        font-size: .75rem;
+    }
+    #contact h4 {
+        background-color: var(--primaryGreen);
+        padding: .5rem;
+        color: #fff;
+        border-radius: 4px;
+    }
+    .mt-md {
+        margin-top: 3rem;
+        margin-bottom: 1rem !important;
+    }
+    .cart-wrap {
+        width: 100%;
+    }
+    .navbar-toggler {
+        order: 1;
+    }
+    #navbarNav {
+        order: 3;
+    }
+    .nav-link-cart {
+        order: 2;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slick-img {
+        width: 150px;
+    }
+    .about h3 {
+        top: 10%;
+    }
+    .item-about {
+        top: 35%;
+    }
+    .item-about h3 {
+        font-size: 3rem;
+    }
+    
+    .item-about .btn {
+        margin-top: 130px !important;
+    }
+    .phone img {
+        width: 200px;
+    }
+    .phone a {
+        font-size: .65rem;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    .carousel-caption {
+        left: 10%;
+        top: -5%;
+    }
+    .carousel-caption .btn {
+        position: absolute;
+        top: 60%;
+    }
+    .products {
+        margin-top: 60px;
+    }
+    .item-about {
+        width: 93% !important;
+        top: unset;
+        transform: translateY(-15%);
+    }
+    .item-about h3 {
+        font-size: 4rem;
+    }
+    .item-about .btn {
+        margin-top: 120px !important;
+    }
+    .about {
+        margin-top: 50px;
+    }
+    .about h3 {
+        top: 10%;
+    }
+    .phone {
+        right: unset;
+        top: 46%;
+    }
+    .phone img {
+        width: 200px;
+    }
+    .phone a {
+        font-size: .75rem;
+        right: 19%;
+    }
+    .artist {
+        margin-top: 290px;
+    }
+    .col {
+        flex-basis: unset;
+    }
+    .btn-sm-full {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .slider-for-img {
+        width: 100%;
+    }
+    .buy-info {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .buy-input {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .footer-item {
+        padding: 0;
+    }
+    .row.mx-n5 {
+        margin: 0 !important;
+    }
+    .row.mx-n5 .px-5 {
+        padding: 0 !important;
+    }
+    .item-picture {
+        height: 100%;
+    }
+    .sm-hide {
+        display: none;
+    }
+    .sm-flex {
+        display: flex;
+    }
+    .sm-rotate {
+        transform: rotate(270deg);
+    }
+    .cart-head h2, .cart-head i, .grand-total-wrap h3 {
+        font-size: 1rem;
+    }
+    .cart-img img {
+        width: 100px;
+    }
+    .cart-item-name, .cart-price, .qty-label, .total-wrap p {
+        font-size: .75rem;
+    }
+}

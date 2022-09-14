@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3366b748fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png"/>
+    <title>Văn hóa uống trà của người Việt, câu chuyện xưa và nay</title>
+</head>
+<body>
+    <!-- Start header -->
+    <section class="header position-relative">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../html/trangchu.html">
+                    <img src="../img/trang-chu/logophongtra.png" alt="Trà Sen Bách Diệp" class="logo">
+                </a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <span class="nav-link-cart">
+                    <i class="fa-solid fa-cart-shopping nav-cart d-block pl-4"></i>
+                </span>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/trangchu.html">Trang chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/sanpham.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lienhe.html">Liên hệ</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <span class="nav-link">
+                                <i class="fa-solid fa-cart-shopping nav-cart"></i>
+                            </span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="cart-wrap">
+            <div class="cart-head p-4 d-flex justify-content-between align-items-center">
+                <h2 class="m-0">Giỏ hàng</h2>
+                <i class="fa-solid fa-xmark px-2 cart-close"></i>
+            </div>
+            <div class="cart-body p-4">
+                <div class="cart-item p-3 d-flex">
+                    <div class="cart-img">
+                        <img src="../img/san-pham/sp1.png" alt="">
+                    </div>
+                    <div class="cart-text ml-3">
+                        <h5 class="cart-item-name">Trà Shan Tuyết</h5>
+                        <p class="cart-price text-muted text-sm" data-value="50000">50,000VND</p>
+                        <label for="cart-qty" class="text-sm qty-label">Số lượng:</label>
+                        <input type="number" name="qty" class="text-sm cart-qty" value="">
+                        <div class="total-wrap d-flex">
+                            <p class="mt-3">Thành tiền:</p>
+                            <p class="total ml-2 mt-3" data-value="0">0VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item p-3 d-flex">
+                    <div class="cart-img">
+                        <img src="../img/san-pham/sp2.png" alt="">
+                    </div>
+                    <div class="cart-text ml-3">
+                        <h5 class="cart-item-name">Trà Oolong</h5>
+                        <p class="cart-price text-muted text-sm" data-value="70000">70,000VND</p>
+                        <label for="cart-qty" class="text-sm qty-label">Số lượng:</label>
+                        <input type="number" name="qty" class="text-sm cart-qty" value="">
+                        <div class="total-wrap d-flex">
+                            <p class="mt-3">Thành tiền:</p>
+                            <p class="total ml-2 mt-3" data-value="0">0VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item p-3 d-flex">
+                    <div class="cart-img">
+                        <img src="../img/san-pham/sp3.png" alt="">
+                    </div>
+                    <div class="cart-text ml-3">
+                        <h5 class="cart-item-name">Trà Búp</h5>
+                        <p class="cart-price text-muted text-sm" data-value="70000">70,000VND</p>
+                        <label for="cart-qty" class="text-sm qty-label">Số lượng:</label>
+                        <input type="number" name="qty" class="text-sm cart-qty" value="">
+                        <div class="total-wrap d-flex">
+                            <p class="mt-3">Thành tiền:</p>
+                            <p class="total ml-2 mt-3" data-value="0">0VND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-foot position-absolute w-100 d-flex justify-content-between align-items-center p-4">
+                <div class="grand-total-wrap d-flex">
+                    <h3 class="m-0">Tổng tiền:</h3>
+                    <h3 class="grand-total ml-2 mb-0" data-value="0">0</h3>
+                </div>
+                <button class="btn">Thanh toán</button>
+            </div>
+        </div>
+    </section>
+    <!-- End header -->
+
+    <!-- Start content -->
+    <div class="tea-bg">
+        <div class="container">
+            <div class="navigation mt-3 mb-5">
+                <a href="../html/trangchu.html" class="text-muted">Trang chủ</a>
+                <span>></span>
+                <span class="navigation-current">Tin tức</span>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="text-primary-green mb-5">Văn hóa uống trà của người Việt, câu chuyện xưa và nay</h2>
+                    <p class="text-justify">Trà xanh thái nguyên được phổ biến là một thức uống dân dã, quen thuộc từ bao đời nay. Cây chè xuất hiện chủ yếu ở các tỉnh Thái Nguyên, Phú Thọ, Yên Bái, Lâm Đồng… là nguồn gốc cho ra những sản phẩm chè có chất lượng cao.</p>
+                    <p class="text-justify">Tùy vào đặc trưng của từng vùng địa lý, khí hậu và cách chế biến khác nhau mà tạo ra các thức uống mang hương vị đặc trưng riêng khác nhau. Lá chè tươi sau khi được hái về, rửa sạch, vò nát rồi đun nước uống liền, người ta gọi đó là chè tươi. Còn những búp chè tươi được hái về, qua nhiều công đoạn chế biến như phơi, sấy, sao khô, ướp hương hoa… thì được gọi là trà. Trà có quy trình chế biến phức tạp, nhiều công đoạn, tốn công sức hơn nên giá thành cũng cao hơn chè tươi.</p>
+                    <img src="../img/bai-viet/intro1.jpg" alt="" class="w-100 d-block mb-4">
+                    <p class="text-justify">Theo ghi chép, trà khởi nguồn ở các Chùa chiền, nơi gắn kết trà với đạo Phật. Cũng bởi lý do đó, hình thức thưởng trà này được gọi là Thiền trà. Từ chùa chiền, hình thức thưởng trà nhanh chóng được ưa chuộng trong chốn cung đình. Thời ngày xưa, chỉ có những người thuộc tầng lớp vua quan, quý tộc, dòng dõi quyền quý mới được thưởng thức trà theo hình thức cầu kỳ này, còn người dân thường chỉ uống loại chè tươi hái từ trên cây xuống.</p>
+
+                    <p class="text-justify"> Thời phong kiến qua đi, đến các cuộc chiến tranh đã trải qua biết bao thăng trầm của lịch sử khiến cho thú chơi của ngày bình yên bị hạn chế. Tuy nhiên, không vì thế nà văn hóa uống trà của người Việt bị mai một hay mất đi. Những nghệ nhân trà truyền thống tại Hà Nội cũng như nhiều vùng khác trên đất Việt vẫn gìn giữ niềm đam mê và bí quyết chế biến trà cho thế hệ sau này.</p>
+                        
+                    <p class="text-justify"> Văn hóa uống trà thái nguyên ngày nay:</p>
+                        
+                    <p class="text-justify"> Thời thế thay đổi, vì thế văn hóa uống trà của người Việt cũng có những sự thay đổi. Chè tươi bây giờ thường thấy có ở những hàng quán nước vỉa hè mà người ta hay gọi là chè tươi, trà đá, là nơi dừng chân tạm thời, nơi dành cho những câu chuyện ngày thường, đời thường của người trẻ, dành cho sự thảnh thơi, không vội vã.</p>
+                        
+                    <p class="text-justify"> Trà khô (trà mạn) cũng khác xưa nhiều, không phải chỉ dành cho những gia đình có điều kiện, am hiểu về trà như xưa nữa mà đã được sử dụng rộng rãi, phổ biến hơn. Người ta thích trà mạn, yêu nghệ thuật thưởng trà nên nhiều người thường chú trọng vào ấm trà, cách pha trà và cả cách thưởng thức chúng. Sản phẩm trà cũng đa dạng chủng loại với nhiều hình thức sử dụng hơn.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-5 mt-md">BÀI VIẾT MỚI</h5>
+                    <div class="news-item mb-3">
+                        <a href="" class="news-item-link p-2 d-flex">
+                            <img src="../img/bai-viet/TINTUC_01.jpg" alt="" class="news-item-img rounded">
+                        <p class="news-item-text text-sm ml-3">Trà Sen Tây Hồ - thứ quà tặng giàu giá trị tinh thần của người Hà Thành</p>
+                        </a>
+                    </div>
+                    <div class="news-item mb-3">
+                        <a href="" class="news-item-link p-2 d-flex">
+                            <img src="../img/bai-viet/TINTUC_02.jpg" alt="" class="news-item-img rounded">
+                            <p class="news-item-text text-sm ml-3">Chè xanh Thái Nguyên ướp hoa nhài</p>
+                        </a>
+                    </div>
+                    <div class="news-item mb-3">
+                        <a href="" class="news-item-link p-2 d-flex">
+                            <img src="../img/bai-viet/TINTUC_03.jpg" alt="" class="news-item-img rounded">
+                            <p class="news-item-text text-sm ml-3">Cách bảo quản trà Shan Tuyết để giữ được vị hương thơm</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End content -->
+
+    <!-- Start footer -->
+    <section class="footer p-5 position-relative">
+        <img src="../img/trang-chu/fotter-tea.png" alt="" class="footer-img position-absolute">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <ul class="footer-item">
+                        <img src="../img/trang-chu/logophongtra.png" alt="" class="mb-3">
+                        <li><a href="tel:0999999999">0999.999.999</a></li>
+                        <li><a href="mailto:trasenbachdiep@gmail.com">trasenbachdiep@gmail.com</a></li>
+                        <li>Số 12, Quảng An, Hồ Tây, Hà Nội</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="footer-item mt-4">
+                        <p>VỀ CHÚNG TÔI</p>
+                        <li><a href="../html/gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="../html/sanpham.html">Sản phẩm</a></li>
+                        <li><a href="../html/tintuc.html">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-item mt-4">
+                        <p>LIÊN HỆ</p>
+                    <a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="javascript:void(0)"><i class="fa-brands fa-facebook"></i></i></a>
+                    <p class="copyright">Copyright © 2010-2020 <br> Tra Sen Bach Diep. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End footer -->
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
